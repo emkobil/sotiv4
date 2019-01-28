@@ -8,10 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.androidadvance.topsnackbar.TSnackbar;
-import com.example.soti_v1.FeedActivity;
+import com.example.soti_v1.MainActivity;
 import com.example.soti_v1.R;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
@@ -27,7 +26,7 @@ public class SigninActivity extends AppCompatActivity {
         setContentView(R.layout.activity_signin);
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
-            Intent ıntent = new Intent(getApplicationContext(), FeedActivity.class);
+            Intent ıntent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(ıntent);
             finish();
         }
@@ -44,7 +43,6 @@ public class SigninActivity extends AppCompatActivity {
         String UsernameText = username.getText().toString();
         String PasswordText = password.getText().toString();
 
-
         ParseUser.logInInBackground(UsernameText, PasswordText, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
@@ -58,7 +56,7 @@ public class SigninActivity extends AppCompatActivity {
                     snackbar2.show();
 
                 } else {
-                    Intent ıntent = new Intent(getApplicationContext(), FeedActivity.class);
+                    Intent ıntent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(ıntent);
                     finish();
                 }
@@ -70,11 +68,13 @@ public class SigninActivity extends AppCompatActivity {
     public void SignupActivity(View view) {
         Intent ıntent = new Intent(getApplicationContext(), SignupActivity.class);
         startActivity(ıntent);
+        finish();
     }
 
     public void ForgotPassword(View view) {
         Intent ıntent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
         startActivity(ıntent);
+
     }
 
 

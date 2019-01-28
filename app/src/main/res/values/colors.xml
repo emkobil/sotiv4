@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#FFC50C</color>
     <color name="colorPrimaryDark">#E5B009</color>
+    <color name="GrayBG">#F8F7F2</color>
     <color name="colorAccent">#FF4081</color>
     <color name="facebookBlue">#3F5996</color>
     <color name="twitterBlue">#29C5F6</color>
@@ -10,4 +11,15 @@
     <color name="transparent">#00000000</color>
     <color name="editTextBG">#DADADA</color>
     <color name="textColor">#6e6e6e</color>
+
+    // ProfileDesign
+    <color name="ProfilePrimaryDark">#292b3d</color>
+    <color name="ProfileGrayLight">#fafafa</color>
+    <color name="StartYellow">#E2DFDA</color>
+    <color name="grey">#bfbfbf</color>
+
+
+
+
+
 </resources>

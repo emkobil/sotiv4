@@ -44,7 +44,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="REGİSTER"
+                    android:text="@string/activitysignup_title"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
@@ -60,13 +60,47 @@
                 android:rotation="45"
                 android:src="@drawable/square" />
 
+
             <RelativeLayout
-                android:id="@+id/RelativeLayout1"
+                android:id="@+id/RelativeLayout0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imageview1"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/imageview_fullnameicon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_import_contacts_black_24dp"
+                    android:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/signupactivity_edittext_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageview_fullnameicon"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imageview_fullnameicon"
+                    android:background="@color/editTextBG"
+                    android:hint="@string/activitysignup_edittext_fullname"
+                    android:maxLength="27"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RelativeLayout0"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginRight="30dp">
 
                 <ImageView
@@ -86,7 +120,8 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imageview_usericon"
                     android:background="@color/editTextBG"
-                    android:hint="Username"
+                    android:hint="@string/activitysignup_edittext_username"
+                    android:maxLength="27"
                     android:paddingLeft="20dp"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -117,7 +152,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imageview_emailicon"
                     android:background="@color/editTextBG"
-                    android:hint="Email"
+                    android:hint="@string/activitysignup_edittext_email"
                     android:inputType="textEmailAddress"
                     android:paddingLeft="20dp"
                     android:textSize="15sp" />
@@ -149,7 +184,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imageview_passwordicon"
                     android:background="@color/editTextBG"
-                    android:hint="Password"
+                    android:hint="@string/activitysignup_edittext_password"
                     android:inputType="textPassword"
                     android:paddingLeft="20dp"
                     android:textSize="15sp" />
@@ -167,7 +202,7 @@
                 android:background="@color/colorPrimary"
                 android:fontFamily="sans-serif-medium"
                 android:onClick="SignUpButton"
-                android:text="SIGN UP"
+                android:text="@string/activitysignup_button_register"
                 android:textColor="@color/white" />
 
             <ImageView
@@ -187,7 +222,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imageview2"
                 android:layout_centerHorizontal="true"
-                android:text="Or Register With"
+                android:text="@string/activitysignup_textview_registerwith"
                 android:textColor="@color/textColor"
                 android:textSize="12sp" />
 
@@ -241,9 +276,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:onClick="SigninActivity"
-                    android:text="Do have an account ? Sign in" />
+                    android:text="@string/activitysignup_textview_gosignin" />
 
 
             </RelativeLayout>

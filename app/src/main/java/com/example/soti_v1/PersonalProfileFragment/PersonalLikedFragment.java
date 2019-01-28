@@ -1,4 +1,4 @@
-package com.example.soti_v1.Fragment;
+package com.example.soti_v1.PersonalProfileFragment;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,32 +10,12 @@ import android.view.ViewGroup;
 
 import com.example.soti_v1.R;
 
-public class HomeFragment extends Fragment {
+public class PersonalLikedFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home,container,false);
+        View view = inflater.inflate(R.layout.personalfragment_liked,container,false);
+
+        return view;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profile_menu_editprofile"
+        android:title="@string/profile_menuitem_editprofile"
+         />
+
+    <item
+        android:id="@+id/profile_menu_settings"
+        android:title="@string/profile_menuitem_settings"
+        />
+
+    <item
+        android:id="@+id/profile_menu_logout"
+        android:title="@string/profile_menuitem_logout"
+        />
+</menu>

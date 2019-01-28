@@ -44,7 +44,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="20dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="LOGIN"
+                    android:text="@string/activitysignin_title"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
@@ -86,7 +86,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imageview_usericon"
                     android:background="@color/editTextBG"
-                    android:hint="Username"
+                    android:hint="@string/activitysignin_edittext_username"
                     android:paddingLeft="20dp"
                     android:textSize="15sp" />
             </RelativeLayout>
@@ -117,7 +117,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imageview_passwordicon"
                     android:background="@color/editTextBG"
-                    android:hint="Password"
+                    android:hint="@string/activitysignin_edittext_password"
                     android:inputType="textPassword"
                     android:paddingLeft="20dp"
                     android:textSize="15sp" />
@@ -136,7 +136,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginTop="10dp"
-                    android:text="Remember me"
+                    android:text="@string/activitysignin_checkbox"
                     android:textColor="@color/textColor" />
 
                 <Button
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:background="@color/transparent"
-                    android:text="Forgot password?"
+                    android:text="@string/activitysignin_textview_forgotpass"
                     android:onClick="ForgotPassword"
                     android:textAllCaps="false"
                     android:textColor="@color/textColor"
@@ -162,7 +162,7 @@
                 android:background="@color/colorPrimary"
                 android:fontFamily="sans-serif-medium"
                 android:onClick="SignInButton"
-                android:text="SIGN IN"
+                android:text="@string/activitysignin_button_login"
                 android:textColor="@color/white" />
 
             <ImageView
@@ -182,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/imageview2"
                 android:layout_centerHorizontal="true"
-                android:text="Or Login With"
+                android:text="@string/activitysignin_textview_loginwith"
                 android:textColor="@color/textColor"
                 android:textSize="12sp" />
 
@@ -237,8 +237,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+
                     android:onClick="SignupActivity"
-                    android:text="Dont have an account ? Sign up" />
+                    android:text="@string/activitysignin_textview_gosignup" />
 
 
             </RelativeLayout>

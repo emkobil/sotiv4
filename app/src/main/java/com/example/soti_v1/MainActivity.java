@@ -7,26 +7,26 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
 
 import com.example.soti_v1.Fragment.BasketFragment;
 import com.example.soti_v1.Fragment.ExploreFragment;
-import com.example.soti_v1.Fragment.HomeFragment;
+import com.example.soti_v1.Fragment.FeedFragment;
 import com.example.soti_v1.Fragment.NotificationFragment;
 import com.example.soti_v1.Fragment.ProfileFragment;
 import com.example.soti_v1.Session.SigninActivity;
+import com.parse.Parse;
 import com.parse.ParseUser;
 
-import static com.parse.Parse.getApplicationContext;
+public class MainActivity extends AppCompatActivity {
 
-public class FeedActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_feed);
+        setContentView(R.layout.activity_main);
 
+        // User login check
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser == null) {
             Intent ıntent = new Intent(getApplicationContext(), SigninActivity.class);
@@ -34,18 +34,25 @@ public class FeedActivity extends AppCompatActivity {
             finish();
         }
 
+
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                new HomeFragment()).commit();
+                new FeedFragment()).commit();
+
+
+
+
+
+
+
+
+
+
     }
 
 
-    public void GoExplore(View view){
-        Intent ıntent = new Intent(getApplicationContext(),ExploreActivity.class);
-        startActivity(ıntent);
-    }
     private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -53,7 +60,7 @@ public class FeedActivity extends AppCompatActivity {
 
             switch (menuItem.getItemId()) {
                 case R.id.nav_home:
-                    selectedFragment = new HomeFragment();
+                    selectedFragment = new FeedFragment();
                     break;
 
                 case R.id.nav_explore:
@@ -70,6 +77,9 @@ public class FeedActivity extends AppCompatActivity {
 
                 case R.id.nav_profile:
                     selectedFragment = new ProfileFragment();
+
+
+
                     break;
 
 

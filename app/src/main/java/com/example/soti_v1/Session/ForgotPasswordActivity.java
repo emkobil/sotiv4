@@ -8,10 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.androidadvance.topsnackbar.TSnackbar;
-import com.example.soti_v1.FeedActivity;
+import com.example.soti_v1.MainActivity;
 import com.example.soti_v1.R;
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -28,7 +27,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
-            Intent ıntent = new Intent(getApplicationContext(), FeedActivity.class);
+            Intent ıntent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(ıntent);
             finish();
         }

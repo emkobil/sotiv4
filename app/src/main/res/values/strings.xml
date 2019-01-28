@@ -1,12 +1,50 @@
 <resources>
     <string name="app_name">soti-v1</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="tab_text_3">Tab 3</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
+    // Activity_Forgot_Password
+    <string name="activityforgotpassword_title">Şifremi unuttum</string>
+    <string name="activityforgotpassword_button">Mail gönder</string>
+    <string name="activityforgotpassword_edittext_email">E-posta</string>
+
+
+    // Activity_Signin
+    <string name="activitysignin_title">Giriş Yap</string>
+    <string name="activitysignin_edittext_username">Kullanıcı adı</string>
+    <string name="activitysignin_edittext_password">Şifre</string>
+    <string name="activitysignin_textview_forgotpass">Şifremi unuttum?</string>
+    <string name="activitysignin_checkbox">Beni hatırla.</string>
+    <string name="activitysignin_textview_loginwith">ile gir</string>
+    <string name="activitysignin_button_login">Giriş Yap</string>
+    <string name="activitysignin_textview_gosignup">Henüz hesabın yokmu? Kaydol</string>
+
+    // Activity_Signup
+    <string name="activitysignup_title">Hesap Oluştur</string>
+    <string name="activitysignup_edittext_fullname">Ad soyad</string>
+    <string name="activitysignup_edittext_username">Kullanıcı adı</string>
+    <string name="activitysignup_edittext_email">E-posta</string>
+    <string name="activitysignup_edittext_password">Şifre</string>
+    <string name="activitysignup_button_register">Kaydol</string>
+    <string name="activitysignup_textview_registerwith">ile kaydol</string>
+    <string name="activitysignup_textview_gosignin">Zaten hesabın varmı? Giriş Yap</string>
+
+    // Personal_Profile_Menu_İtems
+    <string name="personal_profile_menuitem_editprofile">Profili düzenle</string>
+    <string name="personal_profile_menuitem_settings">Ayarlar</string>
+    <string name="personal_profile_menuitem_logout">Çıkış yap</string>
+    <string name="personal_profile_userdetails_follows">Takip</string>
+    <string name="personal_profile_userdetails_friend">Arkadaş</string>
+    <string name="personal_profile_userdetails_editbutton">Profili Düzenle</string>
+    <string name="personal_profile_userdetails_Messagesbutton">Gelen Kutusu</string>
+
+
+    // Company_Profile_Menu_İtems
+    <string name="profile_menuitem_editprofile">Profili düzenle</string>
+    <string name="profile_menuitem_settings">Ayarlar</string>
+    <string name="profile_menuitem_logout">Çıkış yap</string>
+    <string name="profile_userdetails_followers">Takipçi</string>
+    <string name="profile_userdetails_product">Ürün</string>
+    <string name="profile_userdetails_followbutton">Takip Et</string>
+    <string name="profile_userdetails_Messagebutton">Mesaj Gönder</string>
+
+
 </resources>

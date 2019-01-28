@@ -1,6 +1,5 @@
-package com.example.soti_v1.Fragment;
+package com.example.soti_v1.PersonalProfileFragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -10,41 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.soti_v1.R;
-import com.example.soti_v1.Session.SigninActivity;
-import com.parse.ParseUser;
 
-import static com.parse.Parse.getApplicationContext;
-
-public class BasketFragment extends Fragment {
+public class PersonalSavedFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_basket,container,false);
-
-
-
-
+        View view = inflater.inflate(R.layout.personalfragment_saved,container,false);
+        
+        return view;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
